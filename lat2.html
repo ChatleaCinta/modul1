@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Selamat Pagi</title>
+</head>
+<body>
+    <div id="lat2">
+        <img v-bind:src="url">
+        <button v-on:click="greet">Greet</button>
+    </div>
+<script src="lat2.js"></script>
+<script>
+    var lat2 = new Vue({
+    el : '#lat2',
+    data:{
+        name: 'Chatlea Cinta',
+        'url': 'https://www.fullstackpython.com/img/logos/vuejs-wide.png'
+    },
+    methods: {
+        greet: function (name) {
+            alert ('Halo ' + this.name);
+        }
+    }
+});
+vm.greet();
+</script>
+</body>
+</html>

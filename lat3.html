@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Latihan 3</title>
+</head>
+<body>
+    <div id="lat3">
+    <form>
+        <input type="text" placeholder="Input your name" v-model="name">
+        <br> <br>
+        <label>My name is: {{name}} </label>
+        </form>
+    </div>
+    <script src="lat3.js"></script>
+    <script>
+        var lat3 = new Vue({
+            el : '#lat3',
+            data : {
+                'name' : ""
+            }
+        });
+    </script>
+</body>
+</html>

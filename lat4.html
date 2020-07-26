@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Latihan 4</title>
+</head>
+<body>
+    <div id="lat4">
+        <p v-if="items > 10">{{items}} items in stock</p>
+        <p v-else-if="items > 0">Hurry Up, only {{items}} items left</p>
+        <p v-else>Sorry, we are all out</p>
+    </div>
+    <script src="lat4.js"></script>
+    <script>
+        var lat4 = new Vue({
+            el: "#lat4",
+            data: {
+                "items" : 30 
+            }
+        });
+    </script>
+</body>
+</html>
